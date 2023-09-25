@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yummy Bootstrap Template - Index</title>
+  <title>PuenteAI</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -29,9 +29,9 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Yummy
+  * Template Name: PuenteAI
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+  * Template URL: https://bootstrapmade.com/PuenteAI-bootstrap-restaurant-website-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -39,28 +39,39 @@
 
 <body>
 
- <!-- ======= Header ======= -->
+<!-- ======= Header ======= -->
 <header id="header" class="header fixed-top d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
 
     <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
       <!-- Using the logo image from the provided path -->
-      <img src="assets/img/png/logo-no-background.png" alt="PuenteAI Logo">
+      <img src="assets/img/png/logo-no-background.png" alt="PuenteAI Logo" 
+           data-alt-english="PuenteAI Logo"
+           data-alt-spanish="Logo de PuenteAI"
+           data-alt-chinese="PuenteAI标志">
     </a>
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About PuenteAI</a></li>
-        <li><a href="#solutions">Solutions</a></li>
-        <li><a href="#partnerships">Partnerships</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#events">Events & Webinars</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" data-english="Home" data-spanish="Inicio" data-chinese="首页">Home</a></li>
+        <li><a href="#about" data-english="About PuenteAI" data-spanish="Acerca de PuenteAI" data-chinese="关于PuenteAI">About PuenteAI</a></li>
+        <li><a href="#solutions" data-english="Solutions" data-spanish="Soluciones" data-chinese="解决方案">Solutions</a></li>
+        <li><a href="#partnerships" data-english="Partnerships" data-spanish="Asociaciones" data-chinese="合作伙伴关系">Partnerships</a></li>
+        <li><a href="#resources" data-english="Resources" data-spanish="Recursos" data-chinese="资源">Resources</a></li>
+        <li><a href="#events" data-english="Events & Webinars" data-spanish="Eventos & Webinars" data-chinese="活动和网络研讨会">Events & Webinars</a></li>
+        <li><a href="#contact" data-english="Contact" data-spanish="Contacto" data-chinese="联系方式">Contact</a></li>
       </ul>
     </nav><!-- .navbar -->
 
-    <a class="btn-book-a-table" href="#request-demo">Request A Meeting</a>
+
+
+    <a class="btn-book-a-table" href="#request-demo"
+      data-english="Request A Meeting"
+      data-spanish="Solicitar una Reunión"
+      data-chinese="请求会议">
+      Request A Meeting
+    </a>
+
     <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
     <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
@@ -68,23 +79,47 @@
 </header><!-- End Header -->
 
 
-  
 
+  
 <!-- ======= Contact Info Section ======= -->
 <div style="background-color: #F5F6F9; padding: 20px 0; margin-top: 80px;">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <div class="contact-item">
-        <span><strong>Contact for Chinese:</strong> Amir</span>
+        <strong>
+          <span data-english="Contact for Chinese:" 
+                data-spanish="Contacto para Chino:" 
+                data-chinese="中文联系人:">
+            Contact for Chinese:
+          </span>
+        </strong>
+        Amir
         <a href="tel:+8615868420294">+8615868420294</a>
       </div>
       <div class="contact-item">
-        <span><strong>Contact for Spanish:</strong> Mario</span>
-        <a href="tel:YourSpanishNumberHere">+8618458334427</a>
+        <strong>
+          <span data-english="Contact for Spanish:" 
+                data-spanish="Contacto para Español:" 
+                data-chinese="西班牙语联系人:">
+            Contact for Spanish:
+          </span>
+        </strong>
+        Mario
+        <a href="tel:+8618458334427">+8618458334427</a>
+      </div>
+      <!-- Language Selector Positioned Within the Contact Section for Better Structure -->
+      <div class="language-selector">
+        <select id="language-selector" class="custom-select">
+          <option value="english">🇬🇧 English</option>
+          <option value="spanish">🇪🇸 Español</option>
+          <option value="chinese">🇨🇳 中文</option>
+        </select>
       </div>
     </div>
   </div>
 </div>
+<!-- End Contact Info Section -->
+
 
 
 <!-- ======= Hero Section ======= -->
@@ -93,35 +128,92 @@
     <div class="container bg-white my-4 border-top border-light">
       <div class="row py-4">
         <div class="col-md-6 d-flex flex-column justify-content-center">
-          <h1 class="display-4 text-dark text-center mb-4">puenteAi: Bridging B2B across China and Latin America</h1>
-            <ul class="list-unstyled">
-              <li class="d-flex align-items-center mb-2">
-                  <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
-                  <span style="margin-left: 15px;">Connect with businesses in a global B2B community</span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                  <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
-                  <span style="margin-left: 15px;">Trusted by companies for cross-continental partnerships</span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                  <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
-                  <span style="margin-left: 15px;">Seamless integration with existing business infrastructures</span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
-                  <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
-                  <span style="margin-left: 15px;">Expertise in both Chinese and Latin American markets</span>
-              </li>
-              <li class="d-flex align-items-center mb-2">
+          <!-- Translatable content -->
+          <h1 class="display-4 text-dark text-center mb-4" 
+              data-english="puenteAi: Bridging B2B across China and Latin America" 
+              data-spanish="puenteAi: Estableciendo puentes B2B entre China y Latinoamérica"
+              data-chinese="puenteAi: 在中国和拉丁美洲之间架设B2B桥梁">
+          </h1>
+          
+          <ul class="list-unstyled">
+            <!-- Sample list item with translatable content -->
+            <!-- <li class="d-flex align-items-center mb-2">
                 <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
-                <span style="margin-left: 15px;">24/7 customer support to ensure smooth business operations</span>
-              </li>
+                <span style="margin-left: 15px;" 
+                      data-english="Connect with businesses in a global B2B community"
+                      data-spanish="Conéctese con empresas en una comunidad B2B global"
+                      data-chinese="与全球B2B社区中的企业建立联系">
+                </span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+                <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
+                <span style="margin-left: 15px;"
+                      data-english="PuenteAI: Smartly navigate business opportunities between China and Latin America"
+                      data-spanish="PuenteAI: Navega inteligentemente las oportunidades de negocio entre China y Latinoamérica"
+                      data-chinese="PuenteAI: 在中国和拉丁美洲之间智能地寻找商机">
+                </span>
+            </li> -->
+            <li class="d-flex align-items-center mb-2">
               
+                <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
+                <span style="margin-left: 15px;"
+                      data-english="Networking: Bridging Chinese and Latin American businesses."
+                      data-spanish="Networking: Estableciendo puentes entre empresas chinas y latinoamericanas."
+                      data-chinese="人脉网络：搭建中国和拉丁美洲企业之间的桥梁。">
+                </span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+                <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
+                <span style="margin-left: 15px;"
+                      data-english="Localization for Software: Adapting software for Chinese cultural nuances."
+                      data-spanish="Localización de Software: Adaptando software a la cultura china."
+                      data-chinese="软件本地化：适应中国文化的软件调整。">
+                </span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+                <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
+                <span style="margin-left: 15px;"
+                      data-english="Social Media Amplification: Boosting Latin American brands in China's digital space."
+                      data-spanish="Amplificación de Redes Sociales: Potenciando tu marca latinoamericanas en el espacio digital chino."
+                      data-chinese="社交媒体推广：在中国的数字空间中提升拉丁美洲品牌。">
+                </span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+                <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
+                <span style="margin-left: 15px;"
+                      data-english="Talent Discovery: Connecting Latin America to Chinese professionals."
+                      data-spanish="Descubrimiento de Talento: Conectando Latinoamérica con profesionales chinos."
+                      data-chinese="人才发现：将拉丁美洲与中国专业人士连接起来。">
+                </span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+                <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
+                <span style="margin-left: 15px;"
+                      data-english="Professional Training: Skill development for Sino-Latin American business."
+                      data-spanish="Capacitación Profesional: Desarrollo de habilidades para negocios Sino-Latinoamericanos."
+                      data-chinese="专业培训：中拉商务技能发展。">
+                </span>
+            </li>
+            <li class="d-flex align-items-center mb-2">
+                <img src="https://scdn.italki.com/ng/static/image/asgardhp/redx2.png" alt="Bullet Point" class="mr-4" width="12" height="12">
+                <span style="margin-left: 15px;"
+                      data-english="B2B Connections: Assisting Latin American entries into the Chinese market."
+                      data-spanish="Conexiones B2B: Asistiendo a empresas latinoamericanas a entrar al mercado chino."
+                      data-chinese="B2B连接：帮助拉丁美洲企业进入中国市场。">
+                </span>
+            </li>
           </ul>
-        
-          <button type="button" class="btn btn-primary mt-3 .header .btn-book-a-table, .header .btn-book-a-table:focus">Connect Now</button>
+          
+          
+          <button type="button" class="btn btn-primary mt-3 .header .btn-book-a-table, .header .btn-book-a-table:focus"
+                  data-english="Connect Now"
+                  data-spanish="Conectar ahora"
+                  data-chinese="立即连接">
+          </button>
         </div>
+        
         <div class="col-md-6 d-flex justify-content-end align-items-center">
-          <img src="https://scdn.italki.com/ng/static/image/asgardhp/hp_cover_w.png" alt="PuenteAi Image" class="img-fluid" width="560" height="360">
+          <img src="assets/img/banner.jpg" alt="PuenteAi Image" class="img-fluid" width="560" height="360">
         </div>
       </div>
     </div>
@@ -129,51 +221,79 @@
 </div>
 <!-- End Hero Section -->
 
+<script>
+  function updateLanguage() {
+    const selectedLanguage = document.getElementById("language-selector").value;
+    const translatableElements = document.querySelectorAll("[data-" + selectedLanguage + "]");
+    
+    translatableElements.forEach(element => {
+      element.innerText = element.getAttribute("data-" + selectedLanguage);
+    });
+  }
+
+  document.getElementById("language-selector").onchange = updateLanguage;
+  updateLanguage(); // Call once to initialize
+</script>
+
 
 
 
   <main id="main">
 
-  <!-- ======= About puenteAi Section ======= -->
-  <section id="about" class="about">
-    <div class="container" data-aos="fade-up">
+<!-- ======= About puenteAi Section ======= -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+      <div class="section-header">
+          <h2 data-english="About puenteAi" data-spanish="Acerca de puenteAi" data-chinese="关于puenteAi">About puenteAi</h2>
+          <p data-english="Discover More About Our" 
+          data-spanish="Descubre más Sobre nuestra" 
+          data-chinese="了解更多关于我们的">Discover More About Our 
+          <span data-english="Mission" data-spanish="misión" data-chinese="使命">Mission</span>
+       </p>
+       
+      </div>
+      <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg);" data-aos="fade-up" data-aos-delay="150">
 
-        <div class="section-header">
-            <h2>About puenteAi</h2>
-            <p>Discover More <span>About Our Mission</span></p>
-        </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+              <div class="content ps-0 ps-lg-5">
+                <p class="fst-italic" style="color: var(--color-primary);"
+                    data-english="Navigating the intricate lanes of international business can be challenging. At PuenteAI, we streamline this journey, ensuring your business thrives in new territories, from the bustling streets of Beijing to the colorful avenues of Bogota." 
+                    data-spanish="Navegar por los complicados caminos del negocio internacional puede ser desafiante. En PuenteAI, simplificamos este viaje, asegurando que su negocio prospere en nuevos territorios, desde las concurridas calles de Beijing hasta los coloridos avenidas de Bogotá."
+                    data-chinese="在复杂的国际商业道路上导航可能具有挑战性。 在PuenteAI，我们简化了这一过程，确保您的业务在新的领土上蓬勃发展，从北京的繁忙街道到波哥大的五光十色的大道。">
+                    Navigating the intricate lanes of international business can be challenging. At PuenteAI, we streamline this journey, ensuring your business thrives in new territories, from the bustling streets of Beijing to the colorful avenues of Bogota.
+                </p>
+             
+                  <!-- The initial content remains as it was -->
+                  <ul>
+                      <li data-english="Seamless B2B connections between China and Latin America." 
+                          data-spanish="Conexiones B2B sin interrupciones entre China y América Latina." 
+                          data-chinese="中国与拉丁美洲之间的无缝B2B连接。"><i class="bi bi-check2-all"></i> Seamless B2B connections between China and Latin America.</li>
+                      <li data-english="Trusted by top-tier companies for cross-continental collaborations." 
+                          data-spanish="Confiado por empresas de primer nivel para colaboraciones transcontinentales." 
+                          data-chinese="跨洲合作的顶级公司的首选。"><i class="bi bi-check2-all"></i> Trusted by top-tier companies for cross-continental collaborations.</li>
+                      <li data-english="Efficient and user-friendly platform designed for optimal B2B interaction." 
+                          data-spanish="Plataforma eficiente y fácil de usar diseñada para una interacción B2B óptima." 
+                          data-chinese="为最佳的B2B互动设计的高效易用的平台。"><i class="bi bi-check2-all"></i> Efficient and user-friendly platform designed for optimal B2B interaction.</li>
+                  </ul>
+                  <p data-english="Our mission is to streamline international B2B partnerships, fostering growth and innovation. We aim to break down barriers and build successful collaborations." 
+                     data-spanish="Nuestra misión es agilizar las asociaciones B2B internacionales, fomentando el crecimiento y la innovación. Nuestro objetivo es romper barreras y construir colaboraciones exitosas." 
+                     data-chinese="我们的使命是简化国际B2B合作，促进增长和创新。我们旨在打破障碍并建立成功的合作。">
+                     Our mission is to streamline international B2B partnerships, fostering growth and innovation. We aim to break down barriers and build successful collaborations.
+                  </p>
+                  <!-- The image and play button can remain unchanged -->
+                  <div class="position-relative mt-4">
+                      <img src="assets/img/about-2.jpg" class="img-fluid" alt="puenteAi Mission">
+                      <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section><!-- End About puenteAi Section -->
 
-        <div class="row gy-4">
-            <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg);" data-aos="fade-up" data-aos-delay="150">
-                <div class="contact-us position-absolute">
-                    <h4>Contact Us</h4>
-                    <p>+1 5589 55488 55</p>
-                </div>
-            </div>
-            <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
-                <div class="content ps-0 ps-lg-5">
-                    <p class="fst-italic">
-                        At puenteAi, we believe in creating bridges that empower businesses to collaborate across continents. 
-                    </p>
-                    <ul>
-                        <li><i class="bi bi-check2-all"></i> Seamless B2B connections between China and Latin America.</li>
-                        <li><i class="bi bi-check2-all"></i> Trusted by top-tier companies for cross-continental collaborations.</li>
-                        <li><i class="bi bi-check2-all"></i> Efficient and user-friendly platform designed for optimal B2B interaction.</li>
-                    </ul>
-                    <p>
-                        Our mission is to streamline international B2B partnerships, fostering growth and innovation. We aim to break down barriers and build successful collaborations.
-                    </p>
 
-                    <div class="position-relative mt-4">
-                        <img src="assets/img/about-2.jpg" class="img-fluid" alt="puenteAi Mission">
-                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-  </section><!-- End About puenteAi Section -->
 
 
 <!-- ======= Why Choose puenteAi Section ======= -->
@@ -184,12 +304,10 @@
 
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="why-box">
-          <h3>Why puenteAi?</h3>
-          <p>
-            puenteAi is your trusted bridge for B2B collaborations between China and Latin America. We understand the unique dynamics of these markets and provide tailored solutions.
-          </p>
+          <h3 data-english="Why Choose puenteAi?" data-spanish="¿Por qué elegir puenteAi?" data-chinese="为什么选择普恩特艾？">Why Choose puenteAi?</h3>
+          <p data-english="puenteAi is your trusted bridge for B2B collaborations between China and Latin America. We understand the unique dynamics of these markets and provide tailored solutions." data-spanish="puenteAi es tu puente de confianza para colaboraciones B2B entre China y América Latina. Entendemos las dinámicas únicas de estos mercados y ofrecemos soluciones personalizadas." data-chinese="普恩特艾是连接中国和拉丁美洲之间B2B合作的可信赖桥梁。我们了解这些市场的独特动态并提供量身定制的解决方案。">puenteAi is your trusted bridge for B2B collaborations between China and Latin America. We understand the unique dynamics of these markets and provide tailored solutions.</p>
           <div class="text-center">
-            <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+            <a href="#" class="more-btn" data-english="Learn More" data-spanish="Aprender más" data-chinese="了解更多"><span data-english="Learn More" data-spanish="Aprender más" data-chinese="了解更多">Learn More</span> <i class="bx bx-chevron-right"></i></a>
           </div>
         </div>
       </div><!-- End Why Box -->
@@ -200,24 +318,24 @@
           <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-clipboard-data"></i>
-              <h4>Targeted B2B Strategies</h4>
-              <p>We harness market insights to connect businesses effectively across continents.</p>
+              <h4 data-english="Targeted B2B Strategies" data-spanish="Estrategias B2B específicas" data-chinese="有针对性的B2B战略">Targeted B2B Strategies</h4>
+              <p data-english="We harness market insights to connect businesses effectively across continents." data-spanish="Aprovechamos conocimientos del mercado para conectar empresas de manera efectiva en diferentes continentes." data-chinese="我们利用市场洞察力在不同大陆上有效地连接企业。">We harness market insights to connect businesses effectively across continents.</p>
             </div>
           </div><!-- End Icon Box -->
 
           <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-gem"></i>
-              <h4>Reliable Partnerships</h4>
-              <p>We're trusted by businesses for fostering reliable and lasting partnerships.</p>
+              <h4 data-english="Reliable Partnerships" data-spanish="Alianzas confiables" data-chinese="可信赖的合作伙伴关系">Reliable Partnerships</h4>
+              <p data-english="We're trusted by businesses for fostering reliable and lasting partnerships." data-spanish="Las empresas confían en nosotros para fomentar alianzas confiables y duraderas." data-chinese="企业信任我们培养可信赖且持久的合作伙伴关系。">We're trusted by businesses for fostering reliable and lasting partnerships.</p>
             </div>
           </div><!-- End Icon Box -->
 
           <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box d-flex flex-column justify-content-center align-items-center">
               <i class="bi bi-inboxes"></i>
-              <h4>Expertise in Markets</h4>
-              <p>Our in-depth expertise in both Chinese and Latin American markets sets us apart.</p>
+              <h4 data-english="Expertise in Markets" data-spanish="Experiencia en mercados" data-chinese="市场专业知识">Expertise in Markets</h4>
+              <p data-english="Our in-depth expertise in both Chinese and Latin American markets sets us apart." data-spanish="Nuestra experiencia profunda en los mercados chino y latinoamericano nos distingue." data-chinese="我们在中国和拉丁美洲市场的深厚专业知识使我们与众不同。">Our in-depth expertise in both Chinese and Latin American markets sets us apart.</p>
             </div>
           </div><!-- End Icon Box -->
 
@@ -229,392 +347,287 @@
   </div>
 </section><!-- End Why Choose puenteAi Section -->
 
+<!-- ======= Stats Counter Section ======= -->
+<section id="stats-counter" class="stats-counter">
+  <div class="container" data-aos="zoom-out">
 
-    <!-- ======= Stats Counter Section ======= -->
-    <section id="stats-counter" class="stats-counter">
-      <div class="container" data-aos="zoom-out">
+    <div class="row gy-4">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div><!-- End Stats Item -->
-
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="1400" data-purecounter-duration="1" class="purecounter"></span>
+          <p data-english="Billions of Dollars in the Chinese Market" data-spanish="Billones de dólares en el mercado chino" data-chinese="中国市场上数十亿美元">Billions of Dollars in the Chinese Market</p>
         </div>
+      </div><!-- End Stats Item -->
 
-      </div>
-    </section><!-- End Stats Counter Section -->
-
-   <!-- ======= Business Offerings Section ======= -->
-   <section id="offerings" class="offerings">
-    <div class="container" data-aos="fade-up">
-  
-      <div class="section-header">
-        <h2 style="color: var(--color-primary); ">Our Offerings</h2>
-        <p>Discover a range of <span style="color: var(--color-primary); font-weight: bold;">PuenteAI's</span> specialized B2B Solutions tailored for your business needs.</p>
-      </div>
-  
-      <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
-        <li class="nav-item">
-          <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#china-imports">
-            <h4 style="color: var(--color-primary);">China Imports</h4>
-          </a>
-        </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#latam-exports">
-            <h4 style="color: var(--color-primary);">LATAM Exports</h4>
-          </a>
-        </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#partnership-opportunities">
-            <h4 style="color: var(--color-primary);">Partnership Opportunities</h4>
-          </a>
-        </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#consulting-services">
-            <h4 style="color: var(--color-primary);">Consulting Services</h4>
-          </a>
-        </li>
-      </ul>
-  
-      <div class="tab-content" data-aos="fade-up" data-aos-delay="300" style="margin-top: 50px;">
-        <div class="tab-pane fade active show" id="china-imports">
-            <div class="tab-header text-center">
-                <h3 style="color: var(--color-primary);">China Imports</h3>
-                <p>A venture into the East, where ancient crafts meld with cutting-edge innovation.</p>
-            </div>
-            <div class="row gy-5">
-                <div class="col-6">
-                    <img src="https://example.com/path/to/dragonsculpture.jpg" alt="Intricate Dragon Sculpture" class="img-fluid"/>
-                    <p>The ethereal dance of dragons, materialized in porcelain and jade.</p>
-                </div>
-                <div class="col-6">
-                    <p>From the vastness of its landscapes to the intricacies of its culture, China is a land of depth and diversity. Its history spans millennia, and this rich tapestry of time has borne products that are as varied as they are valuable.</p>
-                    <ul>
-                        <li><strong>Artisanal Craftsmanship:</strong> Handcrafted pieces that whisper tales of ancient dynasties.</li>
-                        <li><strong>Innovative Technology:</strong> The cutting edge of modernity, honed by the ambition of a nation.</li>
-                        <li><strong>Economic Might:</strong> A behemoth of trade, China's products grace global markets with quality and innovation.</li>
-                        <li><strong>Cultural Richness:</strong> Every product bears the soul of its maker, reflecting the myriad cultures that flourish under the vast Chinese sky.</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1" class="purecounter"></span>
+          <p data-english="Potential B2B Partnerships" data-spanish="Alianzas B2B potenciales" data-chinese="潜在的B2B合作伙伴关系">Potential B2B Partnerships</p>
         </div>
-    
-        <div class="tab-pane fade" id="latam-exports">
-            <div class="tab-header text-center">
-                <h3 style="color: var(--color-primary);">LATAM Exports</h3>
-                <p>The pulse of Latin rhythms, imprinted upon goods of unparalleled charm.</p>
-            </div>
-            <div class="row gy-5">
-                <div class="col-6">
-                    <img src="https://example.com/path/to/samba.jpg" alt="Samba Dance" class="img-fluid"/>
-                    <p>A whirl of colors and fervor; the passion of LATAM, captured.</p>
-                </div>
-                <div class="col-6">
-                    <p>Latin America, a continent of contrasts. From the icy peaks of the Andes to the tropical allure of the Amazon rainforest, its exports are a testament to its diversity and dynamism.</p>
-                    <ul>
-                        <li><strong>Natural Resources:</strong> Precious metals, lush timbers, and the freshest produce adorn LATAM's export list.</li>
-                        <li><strong>Artistic Expressions:</strong> Hand-woven textiles, captivating dances, and vibrant paintings define its cultural prowess.</li>
-                        <li><strong>Technological Innovations:</strong> Progressive strides in sustainable technology and agricultural innovations.</li>
-                        <li><strong>Cultural Fusion:</strong> A melting pot of traditions, LATAM's exports are as varied as its people.</li>
-                    </ul>
-                </div>
-            </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="800" data-purecounter-duration="1" class="purecounter"></span>
+          <p data-english="Market Size in China" data-spanish="Tamaño del mercado en China" data-chinese="中国市场规模">Market Size in China</p>
         </div>
-    
-        <div class="tab-pane fade" id="partnership-opportunities">
-            <div class="tab-header text-center">
-                <h3 style="color: var(--color-primary);">Partnership Opportunities</h3>
-                <p>Forge ahead with PuenteAi; where dreams converge, and futures are crafted.</p>
-            </div>
-            <div class="row gy-5">
-                <div class="col-6">
-                    <img src="https://example.com/path/to/bridge.jpg" alt="Golden Bridge" class="img-fluid"/>
-                    <p>Building bridges of opportunities, spanning across the realms of the possible.</p>
-                </div>
-                <div class="col-6">
-                    <p>In this era of unparalleled connectivity, PuenteAi understands the power of partnership. Merging strengths, pooling resources, and sharing visions can lead to synergies that redefine industries.</p>
-                    <ul>
-                        <li><strong>Global Network:</strong> Partnerships across continents, connecting markets and minds.</li>
-                        <li><strong>Innovative Ventures:</strong> Exploring uncharted territories, fueled by collective creativity.</li>
-                        <li><strong>Mutual Growth:</strong> A belief that shared success is the sweetest kind.</li>
-                        <li><strong>Trust and Transparency:</strong> The cornerstones of every partnership at PuenteAi.</li>
-                    </ul>
-                </div>
-            </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item text-center w-100 h-100">
+          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+          <p data-english="Business Opportunities" data-spanish="Oportunidades de Negocio" data-chinese="商机">Business Opportunities</p>
         </div>
-    
-        <div class="tab-pane fade" id="consulting-services">
-            <div class="tab-header text-center">
-                <h3 style="color: var(--color-primary);">Consulting Services</h3>
-                <p>Illuminate your path with wisdom's torch held by the guardians of PuenteAi.</p>
-            </div>
-            <div class="row gy-5">
-                <div class="col-6">
-                    <img src="https://example.com/path/to/lighthouse.jpg" alt="Lighthouse in the Storm" class="img-fluid"/>
-                    <p>Guiding vessels through tempests, our beacon of insights ensures safe harbors.</p>
-                </div>
-                <div class="col-6">
-                    <p>Business terrains can be as treacherous as they are rewarding. Navigating through the complex dynamics requires expertise, foresight, and strategic planning. This is where PuenteAi's consulting services shine brightest.</p>
-                    <ul>
-                        <li><strong>Industry Expertise:</strong> Decades of collective experience across various sectors.</li>
-                        <li><strong>Customized Strategies:</strong> Tailored solutions that fit every client's unique needs.</li>
-                        <li><strong>Data-Driven Insights:</strong> Empirical analysis to guide decisions and predict trends.</li>
-                        <li><strong>Global Perspective:</strong> A holistic view that understands global interdependencies and opportunities.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    </div>
-  </section>
-  
-  <style>
-    :root {
-      --color-primary: #ce1212;
-    }
-  </style>
-  
-
-  <!-- ======= Testimonials Section for PuenteAI ======= -->
-  <section id="testimonials" class="testimonials section-bg">
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-header">
-        <h2>Testimonials</h2>
-        <p>What Are They <span>Saying About PuenteAI</span></p>
-      </div>
-
-      <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                  <div class="testimonial-content">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      PuenteAI transformed our approach to data. Their AI insights have driven growth and streamlined our operations like never before.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <h3>Alex Monroe</h3>
-                    <h4>CTO, TechSolutions</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
-                </div>
-              </div>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                  <div class="testimonial-content">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      The level of expertise and support from PuenteAI is unmatched. Their solutions have made us more agile and responsive to market changes.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <h3>Lucia Reyes</h3>
-                    <h4>Director of Marketing, BrandMasters</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
-                </div>
-              </div>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                  <div class="testimonial-content">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Implementing PuenteAI’s solutions was a game-changer. We've seen a significant boost in efficiency and customer satisfaction.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <h3>Kai Matthews</h3>
-                    <h4>Product Manager, InnovateTech</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
-                </div>
-              </div>
-            </div>
-          </div><!-- End testimonial item -->
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <div class="row gy-4 justify-content-center">
-                <div class="col-lg-6">
-                  <div class="testimonial-content">
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Partnering with PuenteAI has been one of our best decisions. Their tools are intuitive and backed by a supportive team.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <h3>Riley Smith</h3>
-                    <h4>CEO, NextGen Digital</h4>
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2 text-center">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
-                </div>
-              </div>
-            </div>
-          </div><!-- End testimonial item -->
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+      </div><!-- End Stats Item -->
 
     </div>
-  </section><!-- End Testimonials Section for PuenteAI -->
-
-<!-- ======= Webinars Section ======= -->
-<section id="webinars" class="webinars">
-  <div class="container-fluid" data-aos="fade-up">
-
-    <div class="section-header">
-      <h2>Webinars</h2>
-      <p>Explore <span>Latest Innovations</span> with PuenteAI</p>
-    </div>
-
-    <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide webinar-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/webinars-1.jpg); height: 300px; margin-right: 20px;">
-          <h3>Introduction to PuenteAI</h3>
-          <div class="date align-self-start">Oct 20, 2023</div>
-          <p class="description">
-            Dive deep into the world of PuenteAI, discover the key concepts and see how our platform can revolutionize your projects.
-          </p>
-        </div><!-- End Webinar item -->
-
-        <div class="swiper-slide webinar-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/webinars-2.jpg); height: 300px; margin-right: 20px;">
-          <h3>Advanced Techniques with PuenteAI</h3>
-          <div class="date align-self-start">Nov 5, 2023</div>
-          <p class="description">
-            Explore advanced features and methodologies of PuenteAI. Tailored for professionals looking to elevate their skill set.
-          </p>
-        </div><!-- End Webinar item -->
-
-        <div class="swiper-slide webinar-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/webinars-3.jpg); height: 300px;">
-          <h3>PuenteAI Community Roundtable</h3>
-          <div class="date align-self-start">Nov 22, 2023</div>
-          <p class="description">
-            Join the community discussion with PuenteAI developers and enthusiasts. Share your experiences, insights, and ideas.
-          </p>
-        </div><!-- End Webinar item -->
-
-
 
   </div>
-</section><!-- End Webinars Section -->
+</section><!-- End Stats Counter Section -->
 
 
 
-
-<!-- ======= Team Section ======= -->
-<section id="chefs" class="chefs section-bg">
+<!-- ======= Business Offerings Section ======= -->
+<section id="offerings" class="offerings">
   <div class="container" data-aos="fade-up">
 
-      <div class="section-header">
-          <h2>Team</h2>
-          <p>Our <span>Professionals</span></p>
+    <div class="section-header">
+      <h2 data-english="Our Offerings" data-spanish="Nuestras Ofertas" data-chinese="我们的服务">Our Offerings</h2>
+      <p data-english="PuenteAi is your trusted bridge for B2B collaborations between China and Latin America." 
+      data-spanish="PuenteAi es tu puente de confianza para colaboraciones B2B entre China y Latinoamérica." 
+      data-chinese="PuenteAi是您在中国和拉丁美洲之间进行B2B合作的可靠桥梁。">PuenteAi is your trusted bridge for B2B collaborations between China and Latin America. 
+      <span data-english="We understand the unique dynamics of these markets and provide tailored solutions." 
+            data-spanish="Comprendemos la dinámica única de estos mercados y proporcionamos soluciones personalizadas." 
+            data-chinese="我们了解这些市场的独特动态并提供量身定制的解决方案。">We understand the unique dynamics of these markets and provide tailored solutions.</span>
+   </p>
+       </div>
+
+       <style>
+        .scrollable-tabs {
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+        
+        .scrollable-tabs .nav-item {
+            display: inline-block;
+            margin-right: 5px; /* You can adjust this value to your liking */
+        }
+    </style>
+    
+    <div class="row gy-4">
+        <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+                <ul class="nav nav-tabs scrollable-tabs" data-aos="fade-up" data-aos-delay="200">
+            <!-- Service 1: Networking -->
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#networking-opportunities">
+                <h4 style="color: var(--color-primary);" data-english="Networking" data-spanish="Redes de Contactos" data-chinese="网络">Networking</h4>
+              </a>
+            </li>
+
+            <!-- Service 2: Localization -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#localization-software">
+                <h4 style="color: var(--color-primary);" data-english="Localization" data-spanish="Localización" data-chinese="本土化">Localization</h4>
+              </a>
+            </li>
+
+            <!-- Service 3: Social Media Amplification -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#social-media-amplification">
+                <h4 style="color: var(--color-primary);" data-english="Amplify Your Social Media in China" data-spanish="Amplifica tus Redes Sociales en China" data-chinese="在中国扩大社交媒体影响力">Amplify Your Social Media in China</h4>
+              </a>
+            </li>
+
+            <!-- Service 4: Talent Discovery -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#talent-discovery">
+                <h4 style="color: var(--color-primary);" data-english="Unearth Talent" data-spanish="Descubre Talento" data-chinese="挖掘人才">Unearth Talent</h4>
+              </a>
+            </li>
+
+            <!-- Service 5: Professional Training -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#professional-training">
+                <h4 style="color: var(--color-primary);" data-english="Master the Business Game" data-spanish="Domina la estrategia de Negocios" data-chinese="掌握商业技巧">Master the Business Game</h4>
+              </a>
+            </li>
+
+            <!-- Service 6: B2B Connections -->
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#b2b-connections">
+                <h4 style="color: var(--color-primary);" data-english="Seamless B2B Connections" data-spanish="Conexiones B2B Sin Problemas" data-chinese="无缝B2B连接">Seamless B2B Connections</h4>
+              </a>
+            </li>
+          </ul>
+
+
+        </div>
       </div>
+      <div class="tab-content" data-aos="fade-up" data-aos-delay="300" style="margin-top: 50px;">
+        <!-- Service 1 Content: Networking -->
+        <div class="tab-pane fade active show" id="networking-opportunities">
+          <div class="tab-header text-center">
+            <h3 style="color: var(--color-primary);" data-english="Networking" data-spanish="Redes de Contactos" data-chinese="网络">Networking</h3>
+            <p data-english="Forge ties, strike deals, and expand horizons. Whether you're a Chinese firm eager to connect with Latin American counterparts or a Latin American business looking eastward, we're your networking nexus." data-spanish="Forja lazos, cierra tratos y expande horizontes. Ya sea que seas una firma china deseosa de conectarse con contrapartes latinoamericanas o un negocio latinoamericano mirando hacia el este, somos tu nexo de conexión." data-chinese="建立联系，达成交易，开拓视野。无论您是渴望与拉丁美洲同行联系的中国公司，还是拉丁美洲企业向东寻找业务机会，我们都是您的网络枢纽。">Forge ties, strike deals, and expand horizons. Whether you're a Chinese firm eager to connect with Latin American counterparts or a Latin American business looking eastward, we're your networking nexus.</p>
+          </div>
+        </div>
 
-      <div class="row gy-4 justify-content-center">
+        <!-- Service 2 Content: Localization -->
+        <div class="tab-pane fade" id="localization-software">
+          <div class="tab-header text-center">
+            <h3 style="color: var(--color-primary);" data-english="Localization for the Modern Software Era" data-spanish="Localización para la Era Moderna del Software" data-chinese="现代软件时代的本土化">Localization for the Modern Software Era</h3>
+            <p data-english="The digital world knows no borders, but cultural nuances matter. Our expertise ensures your software resonates with users in China. By blending technology with local culture, we guarantee an enhanced user experience." data-spanish="El mundo digital no conoce fronteras, pero las diferencias culturales importan. Nuestra experiencia garantiza que tu software resuene con los usuarios en China. Al combinar tecnología con cultura local, garantizamos una mejor experiencia de usuario." data-chinese="数字世界无国界，但文化细节很重要。我们的专业知识确保您的软件与中国用户产生共鸣。通过将技术与本地文化融合，我们保证提升您品牌的数字足迹。">The digital world knows no borders, but cultural nuances matter. Our expertise ensures your software resonates with users in China. By blending technology with local culture, we guarantee an enhanced user experience.</p>
+          </div>
+        </div>
 
-          <div class="col-lg-5 col-md-6 d-flex align-items-stretch offset-lg-1" data-aos="fade-up" data-aos-delay="100">
-              <div class="chef-member">
-                  <div class="member-img">
-                      <img src="assets/img/mario.jpg" class="img-fluid" alt="">
-                      <div class="social">
-                          <a href=""><i class="bi bi-twitter"></i></a>
-                          <a href=""><i class="bi bi-facebook"></i></a>
-                          <a href=""><i class="bi bi-instagram"></i></a>
-                          <a href=""><i class="bi bi-linkedin"></i></a>
-                      </div>
-                  </div>
-                  <div class="member-info">
-                      <h4>Mario Salazar</h4>
-                      <span>Co-founder & CTO</span>
-                      <p>Mario Salazar is a driven experienced startup leader dedicated to leveraging employment and technology to create a better society. Spanish speaker. Seasoned product lead and experienced in tech ventures at a YC Startup. Former Strategy analyst at SAP. MSc Candidate at Zhejiang University.</p>                    </div>
-              </div>
-          </div><!-- End Team Member -->
+        <!-- Service 3: Social Media Amplification -->
+        <div class="tab-pane fade" id="social-media-amplification">
+          <div class="tab-header text-center">
+            <h3 style="color: var(--color-primary);" data-english="Amplify Your Social Media in China" data-spanish="Amplifica tus Redes Sociales en China" data-chinese="在中国扩大社交媒体影响力">Amplify Your Social Media in China</h3>
+            <p data-english="The digital age demands a strong online presence. At PuenteAI, we connect Latin America businesses with local agencies in China. Elevate your brand's digital footprint with strategies tailored to each market's unique essence." data-spanish="La era digital exige una fuerte presencia en línea. En PuenteAI, conectamos empresas latinoamericanas con agencias locales en China. Eleva la huella digital de tu marca con estrategias adaptadas a la esencia única de cada mercado." data-chinese="数字时代需要强大的在线存在。在PuenteAI，我们将拉丁美洲企业与中国本地机构联系起来。通过量身定制适合每个市场独特本质的策略，提升您品牌的数字足迹。">The digital age demands a strong online presence. At PuenteAI, we connect Latin America businesses with local agencies in China. Elevate your brand's digital footprint with strategies tailored to each market's unique essence.</p>
+          </div>
+        </div>
 
-          <div class="col-lg-5 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-              <div class="chef-member">
-                  <div class="member-img">
-                      <img src="assets/img/amir.jpg" class="img-fluid" alt="">
-                      <div class="social">
-                          <a href=""><i class="bi bi-twitter"></i></a>
-                          <a href=""><i class="bi bi-facebook"></i></a>
-                          <a href=""><i class="bi bi-instagram"></i></a>
-                          <a href=""><i class="bi bi-linkedin"></i></a>
-                      </div>
-                  </div>
-                  <div class="member-info">
-                      <h4>Amir Shahrukh</h4>
-                      <span>Co-Founder & CEO</span>
-                      <p>Amir is a serial entrepreneur, with vast experience leading technology ventures in the Chinese market. Speaks Chinese, Urdu, and Hindi. He has lived in China for +10 years and was an Experienced CEO of Hyperchip Technology & Product manager at PowerChina. MSc Candidate at Zhejiang University and Msc at the University of Leeds.</p>
-                  </div>
-              </div>
-          </div><!-- End Team Member -->
+        <!-- Service 4: Talent Discovery -->
+        <div class="tab-pane fade" id="talent-discovery">
+          <div class="tab-header text-center">
+            <h3 style="color: var(--color-primary);" data-english="Unearth Talent: Business Development & Beyond" data-spanish="Descubre Talento: Desarrollo de Negocios y Más Allá" data-chinese="挖掘人才：业务发展与更多">Unearth Talent: Business Development & Beyond</h3>
+            <p data-english="Latin America's dynamic market landscape calls for specialized talent. We bridge this gap, introducing Latin America businesses to the flair and expertise of professionals from China. From business development to tech wizards, discover a world of talent with us." data-spanish="El dinámico panorama del mercado latinoamericano requiere de talento especializado. Nosotros cerramos esta brecha, presentando negocios latinoamericanos al talento y la experiencia de profesionales chinos. Desde el desarrollo de negocios hasta expertos en tecnología, descubre un mundo de talento con nosotros." data-chinese="拉丁美洲充满活力的市场景观需要专业人才。我们弥合了这一差距，将拉丁美洲企业介绍给来自中国的专业人士。从业务发展到技术专家，与我们一起发现一个充满才华的世界。">Latin America's dynamic market landscape calls for specialized talent. We bridge this gap, introducing Latin America businesses to the flair and expertise of professionals from China. From business development to tech wizards, discover a world of talent with us.</p>
+          </div>
+        </div>
 
+        <!-- Service 5: Professional Training -->
+        <div class="tab-pane fade" id="professional-training">
+          <div class="tab-header text-center">
+            <h3 style="color: var(--color-primary);" data-english="Master the Business Game with Professional Training" data-spanish="Domina la estrategia de Negocios con Capacitación Profesional" data-chinese="通过专业培训掌握商业技巧">Master the Business Game with Professional Training</h3>
+            <p data-english="Adapting to new markets requires an evolved skill set. Our training sessions, crafted for professionals in Latin America and China, ensure you're always ahead in the business game." data-spanish="Adaptarse a nuevos mercados requiere un conjunto de habilidades evolucionado. Nuestras sesiones de entrenamiento, diseñadas para profesionales en Latinoamérica y China, aseguran que siempre estés adelante en la estrategia de negocios." data-chinese="适应新市场需要进化的技能。我们为拉丁美洲和中国的专业人士量身定制的培训课程，确保您在商业竞争中始终处于领先地位。">Adapting to new markets requires an evolved skill set. Our training sessions, crafted for professionals in Latin America and China, ensure you're always ahead in the business game.</p>
+          </div>
+        </div>
+
+        <!-- Service 6: B2B Connections -->
+        <div class="tab-pane fade" id="b2b-connections">
+          <div class="tab-header text-center">
+            <h3 style="color: var(--color-primary);" data-english="Seamless B2B Connections: Your Gateway to China" data-spanish="Conexiones B2B Sin Problemas: Tu Entrada a China" data-chinese="无缝B2B连接：通往中国的门户">Seamless B2B Connections: Your Gateway to China</h3>
+            <p data-english="For Latin American businesses with eyes set on China, we're your trusted ally. Dive into the vast Chinese market with our assistance, ensuring smooth sailing from legal intricacies to quality checks." data-spanish="Para las empresas latinoamericanas con la mirada puesta en China, somos tu aliado de confianza. Sumérgete en el vasto mercado chino con nuestra ayuda, asegurando una navegación fluida desde complejidades legales hasta controles de calidad." data-chinese="对于将目光投向中国的拉丁美洲企业，我们是您值得信赖的盟友。在我们的帮助下，深入了解庞大的中国市场，确保从法律复杂性到质量检查的一切都进展顺利。">For Latin American businesses with eyes set on China, we're your trusted ally. Dive into the vast Chinese market with our assistance, ensuring smooth sailing from legal intricacies to quality checks.</p>
+          </div>
+        </div>
       </div>
-
+    </div>
   </div>
-</section><!-- End Team Section -->
+</section>
+
+<style>
+:root {
+  --color-primary: #ce1212;
+}
+/* Additional styling to make it more visually similar... */
+.offerings p span {
+  display: none;
+}
+
+
+</style>
+
+
+
+
+
+
+
+<!-- About Us Section -->
+<section id="about" class="about section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <h2 data-english="About Us" data-spanish="Acerca de Nosotros" data-chinese="关于我们">About Us</h2>
+      <p data-english="Our" data-spanish="Nuestra" data-chinese="我们的">Our <span data-english="Story" data-spanish="Historia" data-chinese="故事">Story</span></p>
+    </div>
+  
+
+      <!-- Our Story Content -->
+      <div class="row gy-4 justify-content-center">
+          <div class="col-lg-10 col-md-12" data-aos="fade-up" data-aos-delay="100">
+              <p data-english="In a rapidly globalizing world, we recognized the untapped potential that lay in bridging the business gaps between Latin America and China. PuenteAI was born out of this vision, aiming to create seamless connections and unlock unprecedented opportunities for businesses across these regions."
+                 data-spanish="En un mundo que se globaliza rápidamente, reconocimos el potencial sin explotar que yacía en cerrar las brechas de negocios entre Latinoamérica y China. PuenteAI nació de esta visión, con el objetivo de crear conexiones fluidas y abrir oportunidades sin precedentes para empresas en estas regiones."
+                 data-chinese="在一个快速全球化的世界中，我们认识到了在拉丁美洲和中国之间架起商业桥梁的未被开发的潜力。PuenteAI因此而诞生，旨在为这些地区的企业创造无缝的连接，释放前所未有的机会。">In a rapidly globalizing world, we recognized the untapped potential that lay in bridging the business gaps between Latin America and China. PuenteAI was born out of this vision, aiming to create seamless connections and unlock unprecedented opportunities for businesses across these regions.</p>
+          </div>
+      </div>
+
+      <!-- Our Team -->
+      <div class="section-header">
+        <p data-english="Our" data-spanish="Nuestro" data-chinese="我们的">Our <span data-english="Team" data-spanish="Equipo" data-chinese="团队">Team</span></p>
+      </div>
+      <div class="row gy-4 justify-content-center">
+          <div class="col-lg-10 col-md-12" data-aos="fade-up" data-aos-delay="150">
+              <p data-english="PuenteAI is powered by a diverse and dynamic team of professionals hailing from different backgrounds. From localization experts and digital marketing gurus to networking aficionados, our collective expertise ensures we remain at the forefront of bridging business gaps."
+                 data-spanish="PuenteAI está impulsado por un equipo diverso y dinámico de profesionales de diferentes orígenes. Desde expertos en localización y gurús de marketing digital hasta aficionados al networking, nuestra experiencia colectiva garantiza que permanecemos a la vanguardia en cerrar brechas de negocios."
+                 data-chinese="PuenteAI由来自不同背景的专业人员组成的多元化和充满活力的团队支持。从本地化专家和数字营销大师到网络达人，我们的集体专业知识确保我们始终位于架起商业差距的前沿。">PuenteAI is powered by a diverse and dynamic team of professionals hailing from different backgrounds. From localization experts and digital marketing gurus to networking aficionados, our collective expertise ensures we remain at the forefront of bridging business gaps.</p>
+          </div>
+      </div>
+<!-- Our Mission -->
+<div class="section-header">
+  <p data-english="Our" data-spanish="Nuestra" data-chinese="我们的">Our <span data-english="Mission" data-spanish="Misión" data-chinese="使命">Mission</span></p>
+</div>
+
+
+<div class="row gy-4 justify-content-center">
+  <div class="col-lg-10 col-md-12" data-aos="fade-up" data-aos-delay="200">
+      <p data-english="To empower businesses by facilitating effective communication, collaboration, and commerce. We strive to be the definitive bridge for enterprises seeking to expand their horizons and navigate new markets."
+         data-spanish="Empoderar a las empresas facilitando una comunicación, colaboración y comercio efectivos. Nos esforzamos por ser el puente definitivo para empresas que buscan expandir sus horizontes y navegar por nuevos mercados."
+         data-chinese="通过促进有效的沟通、协作和商务交流，为企业赋能。我们努力成为希望拓展视野和探索新市场的企业的绝对桥梁。">
+      To empower businesses by facilitating effective communication, collaboration, and commerce. We strive to be the definitive bridge for enterprises seeking to expand their horizons and navigate new markets.
+      </p>
+  </div>
+</div>
+
+<!-- Our Values -->
+<div class="section-header">
+  <p data-english="Our" data-spanish="Nuestros" data-chinese="我们的">Our <span data-english="Values" data-spanish="Valores" data-chinese="价值观">Values</span></p>
+</div>
+
+<div class="row gy-4 justify-content-center">
+  <div class="col-lg-10 col-md-12" data-aos="fade-up" data-aos-delay="250">
+      <ul>
+          <li data-english="Trust: We believe in building lasting relationships founded on mutual respect and reliability."
+              data-spanish="Confianza: Creemos en construir relaciones duraderas basadas en el respeto mutuo y la fiabilidad."
+              data-chinese="信任：我们相信基于相互尊重和可靠性建立持久的关系。">Trust: We believe in building lasting relationships founded on mutual respect and reliability.</li>
+
+          <li data-english="Profitability: Ensuring a lucrative pathway for the partnership."
+              data-spanish="Rentabilidad: Asegurando un camino lucrativo para la asociación."
+              data-chinese="盈利性：确保合作伙伴关系的盈利路径。">Profitability: Ensuring a lucrative pathway for the partnership.</li>
+
+          <li data-english="Innovation: We continuously evolve, adapting to market trends and leveraging cutting-edge technologies."
+              data-spanish="Innovación: Evolucionamos continuamente, adaptándonos a las tendencias del mercado y aprovechando tecnologías de vanguardia."
+              data-chinese="创新：我们不断发展，适应市场趋势，利用尖端技术。">Innovation: We continuously evolve, adapting to market trends and leveraging cutting-edge technologies.</li>
+
+          <li data-english="Collaboration: We believe in the power of partnerships, fostering an environment where every stakeholder feels valued."
+              data-spanish="Colaboración: Creemos en el poder de las asociaciones, fomentando un ambiente donde cada parte interesada se sienta valorada."
+              data-chinese="合作：我们相信合作的力量，培养每一个利益相关者都感到有价值的环境。">Collaboration: We believe in the power of partnerships, fostering an environment where every stakeholder feels valued.</li>
+      </ul>
+  </div>
+</div>
+
+<!-- Service Commitment -->
+<div class="section-header">
+  <p data-english="Service" data-spanish="Compromiso de" data-chinese="服务">Service <span data-english="Commitment" data-spanish="Servicio" data-chinese="承诺">Commitment</span></p>
+</div>
+
+<div class="row gy-4 justify-content-center">
+  <div class="col-lg-10 col-md-12" data-aos="fade-up" data-aos-delay="300">
+      <p data-english="We prioritize working with those genuinely eager to elevate their global standing."
+         data-spanish="Priorizamos trabajar con aquellos realmente ansiosos por elevar su posición global."
+         data-chinese="我们优先与真正渴望提升其全球地位的人合作。">
+      We prioritize working with those genuinely eager to elevate their global standing.
+      </p>
+  </div>
+</div>
+</div>
+</section>
+<!-- End About Us Section -->
+
+
 
 
 
@@ -627,97 +640,6 @@
 
 
 
-    <!-- ======= puenteAi B2B Meeting Section ======= -->
-<section id="book-a-table" class="book-a-table">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-header">
-      <h2>puenteAi B2B Meeting</h2>
-      <p>Schedule <span>Your Appointment</span> With Us</p>
-    </div>
-
-    <div class="row g-0">
-
-      <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
-
-      <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Book A Meeting</button></div>
-            </form>
-          </div>
-
-
-        </form>
-      </div><!-- End Reservation Form -->
-
-    </div>
-
-  </div>
-</section><!-- End puenteAi B2B Meeting Section -->
-
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>gallery</h2>
-          <p>Check <span>Our Gallery</span></p>
-        </div>
-
-        <div class="gallery-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -860,13 +782,13 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>PuenteAI</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/PuenteAI-bootstrap-restaurant-website-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
