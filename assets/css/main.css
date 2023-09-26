@@ -1673,3 +1673,42 @@ section {
 .tab-content {
   margin-top: 50px;  /* Adjust this value as per your requirement */
 }
+/* Make the ul a flex container and distribute its children across the full width */
+.nav.nav-tabs.scrollable-tabs {
+  display: flex;
+  justify-content: space-between;  /* Distribute the children across the full width */
+  flex-wrap: nowrap; /* Make sure the children don't wrap to the next line */
+  overflow-x: auto; /* this will make the list scrollable horizontally when content overflows */
+  white-space: nowrap; /* this prevents the items from wrapping to the next line */
+  width: 100%;        /* Ensuring it takes full width of its parent */
+  max-width: 100%;    /* Ensuring it doesn't exceed the width of the screen */
+  padding-bottom: 10px;  /* Adjust as needed */
+}
+
+/* Make each li grow and take equal width */
+.nav.nav-tabs.scrollable-tabs .nav-item {
+  flex: 1; /* Make each child grow equally */
+  text-align: center; /* Center the content of each child */
+}
+
+.nav.nav-tabs.scrollable-tabs, .nav.nav-tabs.scrollable-tabs .nav-item {
+  box-sizing: border-box;
+}
+.nav.nav-tabs.scrollable-tabs .nav-item {
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+  padding: 5px 10px;  /* Adjust as needed */
+}
+
+.nav-item span {
+  font-size: 24px;  /* Adjust as per requirement */
+  color: var(--color-primary);
+  margin-left: 5px;
+}
+
+/* Example icon classes. Adjust based on your icon font/SVG setup */
+.icon-network, .icon-localize, .icon-social-media, .icon-talent, .icon-training, .icon-b2b {
+  font-size: 20px;  /* Or use a suitable icon font size */
+  color: var(--color-primary);
+}
