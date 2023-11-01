@@ -25,6 +25,14 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome for Star Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -35,6 +43,28 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var delay = 6000; // initial delay
+        
+        function displayMessage(messageId) {
+            var message = document.getElementById(messageId);
+            if (message) {
+                message.classList.remove('hidden');
+            }
+        }
+        
+        setTimeout(function() { displayMessage('message1'); }, delay);
+        delay += 3000;
+        setTimeout(function() { displayMessage('message2'); }, delay);
+        delay += 1500;
+        setTimeout(function() { displayMessage('message3'); }, delay);
+        delay += 3000;
+        setTimeout(function() { displayMessage('message4'); }, delay);
+    });
+</script>
+
+
 </head>
 
 <body>
@@ -217,7 +247,493 @@
         </div>
         
         <div class="col-md-6 d-flex justify-content-end align-items-center">
-          <img src="assets/img/banner.jpg" alt="PuenteAi Image" class="img-fluid" width="560" height="360">
+          <!-- <img src="assets/img/banner.jpg" alt="PuenteAi Image" class="img-fluid" width="560" height="360"> -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+          <style>
+            .product-images img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+            .chat-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-message {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel .card {
+    flex: 0 0 auto;
+    width: 250px;
+    border: 1px solid #e0e0e0;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel .card img.centered-image {
+    max-width: 50%;
+    max-height: 25%;
+    margin-bottom: 10px;
+    display: block; /* Ensures the margin applies properly */
+    margin-left: auto; /* Centers the image */
+    margin-right: auto; /* Centers the image */
+}
+
+
+.carousel .card img[alt*="Supplier Avatar"] {
+    width: 80px;
+    height: 80px;  /* Adjusted to 4:3 ratio */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.carousel .card img[alt*="Review Image"] {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.carousel .card img[alt*="Sample Product"] {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 2px;
+}
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.star-rating[data-rating="5"]::before {
+    content: '\f005 \f005 \f005 \f005 \f005'; /* 5 solid stars */
+}
+
+.star-rating[data-rating="4"]::before {
+    content: '\f005 \f005 \f005 \f005 \f005'; /* 4 solid stars */
+    color: #ffc107;
+}
+
+.star-rating[data-rating="3"]::before {
+    content: '\f005 \f005 \f005 \f006 \f006'; /* 3 solid stars, 2 empty stars */
+    color: #ffc107;
+}
+
+.star-rating {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.swipe-buttons {
+    text-align: center;
+}
+
+.swipe-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.swipe-buttons #nope {
+    background-color: #ff4b5c;
+    color: #fff;
+}
+
+.swipe-buttons #like {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.swipe-buttons button:hover {
+    opacity: 0.9;
+}
+
+            .chat-container {
+                max-width: 600px;
+                margin: 50px auto;
+                border: 1px solid #ddd;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+            }
+    
+            .chat-message {
+                border-radius: 20px;
+                padding: 15px;
+                margin: 10px 0;
+                max-width: 75%;
+                transition: opacity 1s ease;
+                opacity: 0;
+            }
+    
+            .human-message {
+                background-color: #e6f7ff;
+                margin-left: auto;
+                order: 2;
+            }
+    
+            .ai-message {
+                background-color: #d9d9d9;
+                margin-right: auto;
+                order: 1;
+            }
+    
+            .avatar {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+    
+            .ai-message .avatar {
+                margin-right: 0;
+                margin-left: 10px;
+            }
+    
+            .title {
+                font-weight: bold;
+            }
+    
+            .human-message .title {
+                text-align: right;
+            }
+            .carousel {
+                    display: flex;
+                    overflow: hidden;
+                }
+
+                .card {
+                    width: 300px;
+                    display: none; /* Hide by default */
+                }
+
+                .card.active {
+                    display: block;
+                }
+
+                .swipe-buttons {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+            
+
+            /* Animation */
+            @keyframes messageAnimation {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+    
+            .human-message { animation: messageAnimation 2s forwards; }
+            .ai-message { animation: messageAnimation 3s forwards; }
+            .hidden {
+            display: none;
+        }
+        .carousel {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 150px;  /* Adjust to desired width */
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.card img {
+    width: 100%;
+    max-height: 60px;
+    object-fit: cover;
+}
+
+.card p {
+    font-size: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.review {
+    font-size: 8px;
+    margin: 2px 5px;
+    font-style: italic;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 5px;
+}
+
+.review .title {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.star-rating::before {
+    content: '★★★★★';  /* Assuming a 5-star system */
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #ddd;
+}
+
+.star-rating[data-rating="5"]::before { color: gold; }
+.star-rating[data-rating="4"]::before { color: #e6e600; }
+.star-rating[data-rating="3"]::before { color: #e6b800; }
+/* Add more styles for different ratings if needed */
+
+
+.product-images img {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    object-fit: cover;
+}
+/* Dots Navigation */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: #333;
+}
+
+/* Navigation Arrows */
+.carousel-arrows {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-arrow {
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+    background: rgba(0,0,0,0.7);
+}
+        </style>
+
+    <body>
+    
+      <div class="chat-container">
+        <div id="message1" class="chat-message human-message hidden">
+            <p class="title" data-english="You:" data-spanish="Tú:" data-chinese="你:"></p>
+            <p data-english="I'm looking for suppliers to buy coating materials from China." 
+               data-spanish="Estoy buscando proveedores para comprar materiales de revestimiento de China." 
+               data-chinese="我正在寻找从中国购买涂层材料的供应商。"></p>
+        </div>
+        <div id="message2" class="chat-message ai-message hidden">
+            <img src="assets/img/png/chatboat.png" class="avatar" alt="AI Avatar">
+            <p class="title" data-english="PuenteAI Chatbot:" data-spanish="PuenteAI Chatbot:" data-chinese="PuenteAI 聊天机器人："></p>
+            <p data-english="Sure, let me search for the best suppliers in China for coating materials." 
+               data-spanish="Por supuesto, permíteme buscar los mejores proveedores en China de materiales de revestimiento." 
+               data-chinese="当然，让我为您在中国找到最好的涂层材料供应商。"></p>
+        </div>
+        <div id="message3" class="chat-message ai-message hidden">
+          <p class="title" data-english="PuenteAI Chatbot:" data-spanish="Chatbot PuenteAI:" data-chinese="PuenteAI 聊天机器人：">PuenteAI Chatbot:</p>
+          <div data-english="Hi! Welcome to Buy in China. I found 10 people to support you." data-spanish="¡Hola! Bienvenido a Comprar en China. Encontré 10 personas para ayudarte." data-chinese="您好！欢迎来到中国购买。我找到了10个人来支持您。">Hi! Welcome to Buy in China. I found 10 people to support you.</div>
+          
+          <div class="carousel">
+
+           <!-- Supplier 1: Emma -->
+<div class="card active">
+  <div class="supplier-info">
+      <img src="assets/img/profile3.jpg" alt="Supplier 1 Avatar" class="centered-image supplier-avatar">
+      <p data-english="Emma – Specialties: Coating" 
+         data-spanish="Emma – Especialidades: Juguetes" 
+         data-chinese="艾玛 – 专业：涂料">艾玛 – 专业：涂料</p>
+  </div>
+
+  <div class="review">
+      <p class="title" 
+         data-english="Review for Coating Materials Supplier:" 
+         data-spanish="Reseña para Proveedor de Materiales de Revestimiento:" 
+         data-chinese="涂料供应商的评价：">涂料供应商的评价：</p>
+
+      <div data-english="The supplier offers a wide range of high-quality coating materials at competitive prices. Their delivery is always on time, and the customer service is exceptional." 
+           data-spanish="El proveedor ofrece una amplia gama de materiales de revestimiento de alta calidad a precios competitivos. Siempre entregan a tiempo y el servicio al cliente es excepcional." 
+           data-chinese="供应商提供各种高质量的涂料，价格竞争力强。他们总是准时交货，客户服务非常好。">供应商提供各种高质量的涂料，价格竞争力强。他们总是准时交货，客户服务非常好。</div>
+  </div>
+
+  <div class="star-rating" data-rating="4"></div> <!-- Assuming a 5-star system and Emma has a 4-star rating -->
+
+  <div class="product-images">
+      <img src="assets/img/product1.jpg" alt="Sample Product 1 from Emma" class="product-image">
+      <img src="assets/img/product2.jpg" alt="Sample Product 2 from Emma" class="product-image">
+      <img src="assets/img/product3.jpg" alt="Sample Product 3 from Emma" class="product-image">
+      <img src="assets/img/product4.jpg" alt="Sample Product 4 from Emma" class="product-image">
+      <img src="assets/img/product5.jpg" alt="Sample Product 5 from Emma" class="product-image">
+      <!-- Additional product images here -->
+  </div>
+
+  <div class="swipe-buttons">
+      <button id="nope" data-english="Nope" data-spanish="No" data-chinese="不行">不行</button>
+      <button id="like" data-english="Like" data-spanish="Me gusta" data-chinese="喜欢">喜欢</button>
+  </div>
+</div>
+
+<!-- Supplier 2: David -->
+<div class="card active">
+  <div class="supplier-info">
+      <img src="assets/img/profile1.jpg" alt="Supplier 2 Avatar" class="centered-image supplier-avatar">
+      <p data-english="David – Specialties: Coating" 
+         data-spanish="David – Especialidades: Juguetes" 
+         data-chinese="大卫 – 专业：涂料">大卫 – 专业：涂料</p>
+  </div>
+
+  <div class="review">
+      <p class="title" 
+         data-english="Review for Coating Materials Supplier:" 
+         data-spanish="Reseña para Proveedor de Materiales de Revestimiento:" 
+         data-chinese="涂料供应商的评价：">涂料供应商的评价：</p>
+
+      <div data-english="The supplier offers a wide range of high-quality coating materials at competitive prices. Their delivery is always on time, and the customer service is exceptional." 
+           data-spanish="El proveedor ofrece una amplia gama de materiales de revestimiento de alta calidad a precios competitivos. Siempre entregan a tiempo y el servicio al cliente es excepcional." 
+           data-chinese="供应商提供各种高质量的涂料，价格竞争力强。他们总是准时交货，客户服务非常好。">供应商提供各种高质量的涂料，价格竞争力强。他们总是准时交货，客户服务非常好。</div>
+  </div>
+
+  <div class="star-rating" data-rating="4"></div> <!-- Assuming a 5-star system and David has a 4-star rating -->
+
+  <div class="product-images">
+      <img src="assets/img/product6.jpg" alt="Sample Product 6 from David" class="product-image">
+      <img src="assets/img/product7.jpg" alt="Sample Product 7 from David" class="product-image">
+      <img src="assets/img/product8.jpg" alt="Sample Product 8 from David" class="product-image">
+      <img src="assets/img/product9.jpg" alt="Sample Product 9 from David" class="product-image">
+      <img src="assets/img/product10.jpg" alt="Sample Product 10 from David" class="product-image">
+      <!-- Additional product images here -->
+  </div>
+
+  <div class="swipe-buttons">
+      <button id="nope" data-english="Nope" data-spanish="No" data-chinese="不行">不行</button>
+      <button id="like" data-english="Like" data-spanish="Me gusta" data-chinese="喜欢">喜欢</button>
+  </div>
+</div>
+
+<!-- Supplier 3: Lily -->
+<div class="card active">
+  <div class="supplier-info">
+      <img src="assets/img/profile2.jpg" alt="Supplier 3 Avatar" class="centered-image supplier-avatar">
+      <p data-english="Lily – Specialties: Coating" 
+         data-spanish="Lily – Especialidades: Juguetes" 
+         data-chinese="莉莉 – 专业：涂料">莉莉 – 专业：涂料</p>
+  </div>
+
+  <div class="review">
+      <p class="title" 
+         data-english="Review for Coating Materials Supplier:" 
+         data-spanish="Reseña para Proveedor de Materiales de Revestimiento:" 
+         data-chinese="涂料供应商的评价：">涂料供应商的评价：</p>
+
+      <div data-english="The supplier offers a wide range of high-quality coating materials at competitive prices. Their delivery is always on time, and the customer service is exceptional." 
+           data-spanish="El proveedor ofrece una amplia gama de materiales de revestimiento de alta calidad a precios competitivos. Siempre entregan a tiempo y el servicio al cliente es excepcional." 
+           data-chinese="供应商提供各种高质量的涂料，价格竞争力强。他们总是准时交货，客户服务非常好。">供应商提供各种高质量的涂料，价格竞争力强。他们总是准时交货，客户服务非常好。</div>
+  </div>
+
+  <div class="star-rating" data-rating="4"></div> <!-- Assuming a 5-star system and Lily has a 4-star rating -->
+
+  <div class="product-images">
+    <img src="assets/img/product1.jpg" alt="Sample Product 1 from Emma" class="product-image">
+    <img src="assets/img/product2.jpg" alt="Sample Product 2 from Emma" class="product-image">
+    <img src="assets/img/product3.jpg" alt="Sample Product 3 from Emma" class="product-image">
+    <img src="assets/img/product4.jpg" alt="Sample Product 4 from Emma" class="product-image">
+    <img src="assets/img/product5.jpg" alt="Sample Product 5 from Emma" class="product-image">
+      <!-- Additional product images here -->
+  </div>
+
+  <div class="swipe-buttons">
+      <button id="nope" data-english="Nope" data-spanish="No" data-chinese="不行">不行</button>
+      <button id="like" data-english="Like" data-spanish="Me gusta" data-chinese="喜欢">喜欢</button>
+  </div>
+</div>
+
+<!-- Additional supplier cards here -->
+
+      </div></div>
+      <div id="message4" class="chat-message human-message hidden">
+        <p class="title" data-english="You:" data-spanish="Tú:" data-chinese="你:"></p>
+        <p data-english="Yes, please connect me with Emma, the supplier. I noticed her exceptional customer service and the wide range of high-quality coating materials she offers at competitive prices. Thank you for your assistance." 
+           data-spanish="Sí, por favor conéctame con Emma, la proveedora. Noté su excepcional servicio al cliente y la amplia gama de materiales de revestimiento de alta calidad que ofrece a precios competitivos. Gracias por tu asistencia." 
+           data-chinese="是的，请将我与供应商Emma联系。我注意到她提供的高质量涂料种类繁多，价格具有竞争力，而且她的客户服务也非常出色。谢谢你的帮助。"></p>
+    </div>
+    
+    </div>
+    
+    
+    
+    
         </div>
       </div>
     </div>
@@ -243,6 +759,81 @@
 
 
   <main id="main">
+
+
+<!-- ======= User Types Section ======= -->
+<section id="usertypes" class="usertypes">
+  <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h2 data-english="Who are you?" data-spanish="¿Quién eres tú?" data-chinese="你是谁？">Who are you?</h2>
+      </div>
+
+      <div class="row">
+        <!-- Latin America Users -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="user-card">
+                <img src="assets/img/location1.jpg" alt="Latin America" class="img-fluid">
+                <h3 data-english="Latin America" data-spanish="América Latina" data-chinese="拉丁美洲">Latin America</h3>
+                <p data-english="Customers from Latin America looking to buy from China."
+                   data-spanish="Clientes de América Latina buscando comprar de China."
+                   data-chinese="来自拉丁美洲希望从中国购买的客户。">
+                   Customers from Latin America looking to buy from China.
+                </p>
+                <ul>
+                    <li data-english="Diverse product range" 
+                        data-spanish="Gama diversa de productos" 
+                        data-chinese="产品种类繁多">
+                        Diverse product range
+                    </li>
+                    <li data-english="Expert purchasing guidance" 
+                        data-spanish="Orientación experta para la compra" 
+                        data-chinese="购买指导">
+                        Expert purchasing guidance
+                    </li>
+                    <li data-english="Customs and shipping support" 
+                        data-spanish="Apoyo aduanero y de envío" 
+                        data-chinese="关税和运输支持">
+                        Customs and shipping support
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- China Users -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="user-card">
+                <img src="assets/img/location2.jpg" alt="China" class="img-fluid">
+                <h3 data-english="China" data-spanish="China" data-chinese="中国">China</h3>
+                <p data-english="Sellers setting up shop (agents that export)."
+                   data-spanish="Vendedores que establecen tiendas (agentes que exportan)."
+                   data-chinese="设立商店的销售商（出口代理）。">
+                   Sellers setting up shop (agents that export).
+                </p>
+                <ul >
+                    <li data-english="Targeted market insights" 
+                        data-spanish="Información del mercado dirigida" 
+                        data-chinese="针对性的市场见解">
+                        Targeted market insights
+                    </li>
+                    <li data-english="Advanced selling tools" 
+                        data-spanish="Herramientas de venta avanzadas" 
+                        data-chinese="高级销售工具">
+                        Advanced selling tools
+                    </li>
+                    <li data-english="Multilingual support" 
+                        data-spanish="Soporte multilingüe" 
+                        data-chinese="多语言支持">
+                        Multilingual support
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- End User Types Section -->
+
+
 <!-- ======= About puenteAi Section ======= -->
 <section id="about" class="about">
   <div class="container" data-aos="fade-up">
